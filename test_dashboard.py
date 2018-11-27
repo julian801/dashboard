@@ -1,6 +1,9 @@
 
 import requests
+import os
 
-url = "http://myamazonmachine/dashboard"
+host = os.getenv('DASHBOARD_HOST')
+
+url = "http://{host}"
 page = requests.get(url)
 assert page.status == 200

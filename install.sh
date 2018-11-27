@@ -4,14 +4,14 @@
 #
 
 # install Python, Django, git
-sudo yum install python36
-sudo yum install python3-pip
-sudo yum install git
+sudo yum -y install python36
+sudo yum -y install python3-pip
+sudo yum -y install git
 
 # install the Python program
-git clone github.com/krother/myawesomedashboard.git
-cd myawesomedashboard-master
-pip3 install -r requirements.txt
+git clone https://github.com/krother/dashboard.git
+cd dashboard
+sudo pip3 install -r requirements.txt
 
 # download CSV file
-curl http://somewhere.com/my.csv
+# curl http://somewhere.com/my.csv
