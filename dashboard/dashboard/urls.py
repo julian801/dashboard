@@ -15,10 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from board.views import main
+from board.views import main, plot1, plot2, plot3
 
 urlpatterns = [
     path('dashboard/', main),
+    path('plot1/', plot1),
+    path('plot2/', plot2),
+    path('plot3/', plot3),
     path('admin/', admin.site.urls),
-    path('/', main),
+    path('', main),
 ]

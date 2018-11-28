@@ -1,0 +1,16 @@
+
+h1 {
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.plot {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 50px;
+  background-color: #cccccc;
+}
+
+p {
+  padding-left: 50px;
+}
