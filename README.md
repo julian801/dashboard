@@ -15,14 +15,15 @@
 
 ## TODO:
 
-### AWS CONTROL PANEL (or boto3):
-    create an EC2 instance (AWS dashboard)
-    open a port for HTTTP :80
+### AWS Configuration
+  - create an EC2 instance (AWS dashboard)
+  - in the security group, open a port for HTTTP :80
+  - add your host name to the ALLOWED_HOSTS in settings.py
+  - start Django on the remote machine, so that it keeps running
+  python manage.py runserver 0.0.0.0:80
 
 ###  Fabric:
   - copy installation script to EC2 and execute it
-  - start Django on the remote machine, so that it keeps running
-    python manage.py runserver
 
 ### Web Dev
   - write a HTML template (with D3!!!)
@@ -40,3 +41,4 @@
 - create a git repository, push
 - !! gitignore, so that AWS key pair doesnt get inside
 - write a HTML template (with D3!!!)
+- NGINX

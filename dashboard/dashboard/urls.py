@@ -20,5 +20,5 @@ from board.views import main
 urlpatterns = [
     path('dashboard/', main),
     path('admin/', admin.site.urls),
-    path('/', main),
+    path('', main),
 ]
